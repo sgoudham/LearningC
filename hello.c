@@ -3,7 +3,7 @@ void println(char *printString);
 
 int main() 
 {
-	println("This is a test");
+	println("Hello World!");
 	return 0;
 }
 
