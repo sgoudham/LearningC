@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "utility.h"
 
 int main() {
     char operator; 
@@ -13,26 +14,23 @@ int main() {
             break;
         }
 
-        printf("Enter First Operand: ");
-        scanf("%lf", &firstOperand);
-        printf("Enter Second Operand: ");
-        scanf("%lf", &secondOperand);
+        getOperands(&firstOperand, &secondOperand);
 
         switch (operator) {
             case '+':
-
+                add(firstOperand, secondOperand);
                 break;
 
             case '-':
-
+                subtract(firstOperand, secondOperand);
                 break;
 
             case '*':
-
+                multiply(firstOperand, secondOperand);
                 break;
 
             case '/':
-
+                divide(firstOperand, secondOperand);
                 break;
 
             default:
