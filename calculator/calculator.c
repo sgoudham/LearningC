@@ -9,6 +9,7 @@ int main() {
     do {
         printf("Enter An Operator (+, -, *, /):\nEnter 'e' To Exit:\n");
         scanf(" %c", &operator);
+        while (getchar() != '\n');
 
         if (operator == 'e') {
             break;
